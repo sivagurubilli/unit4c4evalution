@@ -28,6 +28,6 @@ app.listen(5000,async(req,res)=>{
         await connect()
 console.log("listening at 5000")
     }catch(err){
-        res.send({err:err.message})
+        return res.send({err:err.message})
     }
 })
